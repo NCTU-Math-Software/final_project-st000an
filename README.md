@@ -1,6 +1,7 @@
 # final_project-st000an
 final_project-st000an created by GitHub Classroom
 
+選PROJECT17
 製造一個nxn矩陣
 其數字由1從最中間順時鐘往外依序寫下1 2 3 ....到n平方
 
