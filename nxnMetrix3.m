@@ -245,7 +245,8 @@ colormap(map);
 Y=81*ones(size(A,1),size(A,1));
 for ii=1:size(A,1)
     for jj=1:size(A,1)
-        if(isprime(A(ii,jj))==1)
+        ans1=f(A(ii,jj));
+        if(ans1==1)
            Y(ii,jj)=1;
         end
     end
@@ -253,4 +254,20 @@ for ii=1:size(A,1)
 end
 
 image(Y);
+end
+
+function y = f(n)
+a= sqrt(n);
+a=floor(a); 
+if (n~=1)
+for ii = 2 : a
+    if mod(n,ii)==0
+        y = 0;   % y = 0 表示為合數
+        return; 
+    end
+end
+y=1; %y=1表示質數
+else
+y=0;
+end
 end
